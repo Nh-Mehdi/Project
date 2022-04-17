@@ -1,0 +1,309 @@
+@font-face {
+  font-family: roboto-black;
+  src: url(../Font/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: roboto-light;
+  src: url(../Font/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: roboto-regular;
+  src: url(../Font/Roboto-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+
+html {
+  font-size: 18px;
+  font-family: roboto-regular;
+  line-height: 1.5;
+}
+
+:root {
+  --black: #000000;
+  --black-lt: rgb(0 0 0 / 86%);
+  --black--: #161616;
+  --gray: #9f9f9f;
+  --white: #ffffff;
+  --white--: #c7c7c7;
+  --green: #009e66;
+  --blue: #3f51b5;
+  --red: #ff1f1f;
+  --space: 0.5rem;
+}
+
+body {
+  background: var(--black);
+}
+
+/* ===============  Header =============== */
+
+header {
+  height: 100vh;
+  background: url("../Files/bg.jpg");
+  position: relative;
+}
+
+#toggle-inp {
+  display: none;
+}
+
+nav {
+  background: var(--black--);
+  color: white;
+}
+
+.container-fluid {
+  display: flex;
+  padding: 0.5rem 3rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1.logo {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+ul.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-links {
+  padding: 0 1rem;
+  font-family: roboto-regular;
+  font-size: 1rem;
+}
+
+.btn-tgl {
+  display: none;
+}
+
+.green {
+  color: var(--green);
+}
+
+.white {
+  color: var(--white);
+}
+
+.blacklt {
+  color: var(--black--);
+  font-weight: bold;
+}
+
+.gray {
+  color: var(--gray);
+  font-size: 1rem;
+  font-family: 'roboto-black';
+}
+
+.red {
+  color: var(--red);
+}
+
+header .header-body {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+
+header .header-body h2 {
+  font-size: 3rem;
+  color: var(--black);
+}
+
+header .header-body p {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--white);
+}
+
+/* ===============  Main =============== */
+main {
+  padding: 5rem 0;
+}
+
+p.text-center {
+  color: var(--par-color);
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.frs-tit h3 {
+  font-size: 2rem;
+  margin-bottom: calc(var(--space) * 2);
+}
+
+.sec-tit h4 {
+  font-size: 1.5rem;
+}
+
+main h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.para-about {
+  margin-bottom: 3rem;
+  border-bottom: var(--green) 0.2rem solid;
+}
+
+.about-info {
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+
+.btn-cv {
+  background: var(--green);
+  width: 150px;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.5rem 2rem;
+}
+
+.social i {
+  margin-right: calc(1rem / 2);
+}
+
+.social i:hover {
+  color: var(--green);
+}
+
+i {
+  transition: 0.5s;
+}
+
+/* Services */
+
+.services {
+  padding: 5rem 0;
+}
+
+.services i {
+  margin-bottom: 1rem;
+  color: var(--green);
+}
+
+.services .box {
+  background-color: #161616;
+  border-bottom: 2px solid transparent;
+  padding: 38px 42px;
+  margin: 0 0 15px;
+  box-shadow: 0 6px 16px rgb(0 0 0 / 20%);
+  transition: all 0.15s ease-in-out;
+}
+
+.services .box:hover {
+  border-bottom: 2px solid var(--green);
+}
+
+.container {
+  max-width: 1170px;
+}
+
+.service-title {
+  color: var(--white);
+  font-family: roboto-black;
+}
+
+p.service-description {
+  color: var(--gray);
+}
+
+.services h2 {
+  margin-bottom: 3rem;
+}
+
+/* Testimonials */
+
+.comments {
+  padding: 5rem 0;
+}
+
+.client {
+  background: var(--black--);
+  padding: 30px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.profil {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.img img {
+  margin-right: 14px;
+  width: 54px;
+}
+
+.client h6,
+.client span {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.client span {
+  color: var(--gray);
+}
+
+.ico {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  color: var(--green);
+  font-size: 0.8rem;
+}
+
+.comments .container h2 {
+  margin-bottom: 3rem;
+}
+
+.service-description {
+  font-size: 0.9rem;
+}
+
+/* Plans */
+.plans {
+  padding:3rem 0;
+}
+
+.plan {
+  background: var(--black--);
+}
+
+.plan .btn {
+  background: var(--green);
+  color: var(--white);
+  border: 1px solid #009e66;
+  border-radius: 30px;
+  padding: 10px 35px;
+  font-weight: bold;
+}
+
+.br {
+  border-radius: 5px;
+}
+/*//////////////////////////////////////////////////////////////////
+///////////////////////////  Animations  ///////////////////////////
+////////////////////////////////////////////////////////////////////*/
+
